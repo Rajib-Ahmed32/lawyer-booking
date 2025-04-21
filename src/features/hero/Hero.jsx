@@ -1,0 +1,22 @@
+import React from 'react';
+import heroImage from '../../assets/banner-img-1.png'; // Adjust path based on your structure
+
+const Hero = () => {
+  return (
+    <section 
+      className="relative w-full px-6 max-w-6xl mx-auto bg-cover bg-center h-[500px] flex justify-center items-center text-white md:rounded-2xl overflow-hidden" 
+      style={{ backgroundImage: `url(${heroImage})` }}
+    >
+      <div className="text-center max-w-[800px] p-5">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-5 leading-tight">
+        It avoids subjective claims or exaggeration that might raise red flags legally
+        </h1>
+        <p className="text-base md:text-lg font-medium opacity-80 leading-relaxed">
+        Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. Whether it's a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.
+        </p>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

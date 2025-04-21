@@ -4,11 +4,11 @@ import logo from "../../assets/logo.png";
 const Header = () => {
   return (
     <header className="w-full shadow-sm bg-white">
-      <div className="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <div className="max-w-6xl mx-auto flex items-center justify-between p-4 lg:px-0">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img src={logo} alt="logo" className="w-8 h-8" />
-          <span className="text-2xl font-semibold">Law.BD</span>
+          <img src={logo} alt="logo" className="w-7 h-7 md:w-8 md:h-8" />
+          <span className="text-[22px] md:text-2xl font-semibold">Law.BD</span>
         </div>
 
         {/* Navigation */}
@@ -41,7 +41,7 @@ const Header = () => {
 
         {/* Contact Now Button */}
         <div>
-          <button className="bg-green-600 cursor-pointer hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm">
+          <button className="bg-green-600 cursor-pointer hover:bg-green-700 text-white px-4 md:px-4 py-2 font-medium text-[12px] rounded-full md:text-sm">
             Contact Now
           </button>
         </div>
