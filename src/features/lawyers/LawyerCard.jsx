@@ -4,7 +4,14 @@ import { Link } from "react-router-dom";
 const LawyerCard = ({ lawyer }) => {
   return (
     <div className="border bg-white border-[#D1D5DB] py-8 rounded-lg w-full lg:w-[48%] flex flex-col items-center md:flex-row justify-center md:items-start gap-10 md:gap-12">
-      <div className="bg-gray-300 h-40 w-40 rounded"></div>
+      <div className="h-40 w-40 rounded overflow-hidden bg-gray-300">
+        <img
+          src={lawyer.img}
+          alt={lawyer.name}
+          className="h-full w-full object-cover"
+        />
+      </div>
+
       <div className="flex flex-col justify-between">
         <div className="flex gap-2 mb-2">
           <button className="bg-[#09982F1A] text-[#09982F] text-xs px-3 py-1 rounded-full">

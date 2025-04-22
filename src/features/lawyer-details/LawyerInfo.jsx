@@ -2,7 +2,13 @@ import React from "react";
 
 const LawyerInfo = ({ lawyer }) => (
   <div className="bg-white border-1 border-[#D1D5DB] mt-6 p-6 rounded-lg shadow flex flex-col md:flex-row items-center gap-6">
-    <div className="bg-gray-300 w-80 md:w-60 h-60 rounded-md flex-shrink-0"></div>
+    <div className="bg-gray-300 w-80 md:w-60 h-60 rounded-md flex-shrink-0">
+    <img
+    src={lawyer.img}
+    alt={lawyer.name}
+    className="h-full w-full object-cover"
+  />
+    </div>
     <div className="flex-1">
       <button className="bg-[#176AE51A] text-[#176AE5] text-xs px-3 py-1 rounded-full">
         {lawyer.experience}
