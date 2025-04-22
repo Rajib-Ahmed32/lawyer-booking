@@ -10,7 +10,10 @@ const Lawyers = () => {
     <div className="p-4 max-w-6xl mx-auto">
       <h2 className="text-2xl font-bold text-center mb-4">Our Best Lawyers</h2>
       <p className="text-[#0F0F0FCC] text-center my-5 px-7 md:px-12">
-        Our platform connects you with verified, experienced Lawyers across various specialties — all at your convenience. Whether it's a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.
+        Our platform connects you with verified, experienced Lawyers across
+        various specialties — all at your convenience. Whether it's a routine
+        checkup or urgent consultation, book appointments in minutes and receive
+        quality care you can trust.
       </p>
       <div className="flex flex-wrap gap-8">
         {visibleLawyers.map((lawyer) => (
