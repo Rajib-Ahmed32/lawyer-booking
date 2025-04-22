@@ -34,6 +34,7 @@ const LawyerProfile = () => {
     <div className="max-w-6xl mx-auto p-4 pt-8">
       <ProfileHeader />
       <LawyerInfo lawyer={lawyer} />
+      <AppointmentSection onBook={handleBooking} />
     </div>
   );
 };

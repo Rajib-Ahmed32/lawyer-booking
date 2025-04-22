@@ -3,10 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './features/header/Header';
 import './App.css';
 import Home from './pages/Home';
-import Bookings from './pages/Bookings';
 import Blogs from './pages/Blogs';
 import Contact from './pages/Contact';
+import Bookings from './pages/Bookings';
 import LawyerProfile from './features/lawyer-details/LawyerProfile';
+import { ToastContainer } from 'react-toastify';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <ToastContainer position="top-right" autoClose={3000} />
     </Router>
   );
 };

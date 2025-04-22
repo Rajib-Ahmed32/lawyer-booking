@@ -1,8 +1,11 @@
 import React from 'react'
+import AppointmentManager from '../features/booking-container/AppointmentManager'
 
 const Bookings = () => {
   return (
-    <div>Bookings</div>
+    <div>
+      <AppointmentManager />
+    </div>
   )
 }
 
