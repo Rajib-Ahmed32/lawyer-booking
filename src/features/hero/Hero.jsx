@@ -1,10 +1,10 @@
 import React from 'react';
-import heroImage from '../../assets/banner-img-1.png'; // Adjust path based on your structure
+import heroImage from '../../assets/banner-img-1.png'; 
 
 const Hero = () => {
   return (
     <section 
-      className="relative w-full px-6 max-w-6xl mx-auto bg-cover bg-center h-[500px] flex justify-center items-center text-white md:rounded-2xl overflow-hidden" 
+      className="relative w-full mb-8 px-6 max-w-6xl mx-auto bg-cover bg-center h-[500px] flex justify-center items-center text-white md:rounded-2xl overflow-hidden" 
       style={{ backgroundImage: `url(${heroImage})` }}
     >
       <div className="text-center max-w-[800px] p-5">

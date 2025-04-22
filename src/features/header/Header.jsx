@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // ✅ Add this
 import logo from "../../assets/logo.png";
 
 const Header = () => {
@@ -13,30 +14,30 @@ const Header = () => {
 
         {/* Navigation */}
         <nav className="hidden md:flex gap-6 font-medium text-sm md:text-base text-[#0F0F0FB3]">
-          <a
-            href="#"
+          <Link
+            to="/"
             className="focus:outline-none relative pb-1 mb-1 focus:after:content-[''] focus:after:absolute focus:after:left-0 focus:after:bottom-0 focus:after:h-[2px] focus:after:w-full focus:after:bg-[#0EA106]"
           >
             Home
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/bookings"
             className="focus:outline-none relative pb-1 mb-1 focus:after:content-[''] focus:after:absolute focus:after:left-0 focus:after:bottom-0 focus:after:h-[2px] focus:after:w-full focus:after:bg-[#0EA106]"
           >
             Bookings
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/blogs"
             className="focus:outline-none relative pb-1 mb-1 focus:after:content-[''] focus:after:absolute focus:after:left-0 focus:after:bottom-0 focus:after:h-[2px] focus:after:w-full focus:after:bg-[#0EA106]"
           >
             Blogs
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/contact"
             className="focus:outline-none relative pb-1 mb-1 focus:after:content-[''] focus:after:absolute focus:after:left-0 focus:after:bottom-0 focus:after:h-[2px] focus:after:w-full focus:after:bg-[#0EA106]"
           >
             Contact Us
-          </a>
+          </Link>
         </nav>
 
         {/* Contact Now Button */}
