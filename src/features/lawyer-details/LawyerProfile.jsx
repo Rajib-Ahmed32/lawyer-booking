@@ -26,7 +26,7 @@ const LawyerProfile = () => {
 
     const updatedAppointments = [...existing, lawyer];
     localStorage.setItem('appointments', JSON.stringify(updatedAppointments));
-    toast.success('Appointment successful!');
+    toast.success('Your appointment has been successfully booked.');
     navigate('/bookings');
   };
 
