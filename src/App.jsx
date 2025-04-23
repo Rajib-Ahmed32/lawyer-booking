@@ -28,26 +28,28 @@ const AppContent = () => {
     return () => clearTimeout(timeout);
   }, [location]);
 
-  // Hide footer for these routes
+
   const hideFooterRoutes = ["/not-found", "/contact"];
   const shouldHideFooter = hideFooterRoutes.includes(location.pathname);
 
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       {loading && <GlobalLoader />}
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/lawyer/:id" element={<LawyerProfile />} />
-        <Route path="/bookings" element={<Bookings />} />
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/not-found" element={<NotFound />} />
-        <Route path="*" element={<Navigate to="/not-found" />} />
-      </Routes>
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/lawyer/:id" element={<LawyerProfile />} />
+          <Route path="/bookings" element={<Bookings />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/not-found" element={<NotFound />} />
+          <Route path="*" element={<Navigate to="/not-found" />} />
+        </Routes>
+      </main>
       {!shouldHideFooter && <Footer />}
       <ToastContainer position="top-right" autoClose={3000} />
-    </>
+    </div>
   );
 };
 
