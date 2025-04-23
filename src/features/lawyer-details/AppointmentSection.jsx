@@ -24,7 +24,7 @@ const AppointmentSection = ({ onBook, isAvailableToday }) => (
     <button
       onClick={isAvailableToday ? onBook : null}
       disabled={!isAvailableToday}
-      className="bg-[#0EA106] text-white font-bold px-4 py-2 w-full rounded-full mt-4 hover:bg-green-700 transition text-sm disabled:opacity-50 disabled:cursor-not-allowed"
+      className="bg-[#0EA106] cursor-pointer text-white font-bold px-4 py-2 w-full rounded-full mt-4 hover:bg-green-700 transition text-sm disabled:opacity-50 disabled:cursor-not-allowed"
     >
       Book Appointment Now
     </button>

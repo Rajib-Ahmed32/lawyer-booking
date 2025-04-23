@@ -35,7 +35,7 @@ const Lawyers = () => {
             <div className="text-center mt-6">
               <button
                 onClick={() => setShowAll(true)}
-                className="bg-[#0EA106] text-white text-bold px-6 py-2 rounded-full hover:bg-green-700 transition"
+                className="bg-[#0EA106] cursor-pointer text-white text-bold px-6 py-2 rounded-full hover:bg-green-700 transition"
               >
                 Show All Lawyers
               </button>
