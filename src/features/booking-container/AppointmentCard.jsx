@@ -2,9 +2,9 @@ const AppointmentCard = ({ lawyer, handleCancel }) => {
   return (
     <div
       key={lawyer.id}
-      className="bg-white border-2 border-[#14141426] rounded-lg p-4 md:p-8 shadow mb-7"
+      className="bg-white border-2 border-[#14141426] mx-4 rounded-lg p-4 md:p-8 shadow mb-7"
     >
-      <div className="flex text-xl text-[#141414] font-bold justify-between border-dashed">
+      <div className="md:flex text-xl text-[#141414] font-bold md:justify-between border-dashed">
         <h3 className="font-semibold">{lawyer.name}</h3>
         <p className="text-lg text-[#14141499] mt-1">
           Appointment Fee: {lawyer.fee || "Not Available"} 

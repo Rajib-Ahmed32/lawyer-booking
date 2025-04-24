@@ -14,13 +14,13 @@ const Lawyers = () => {
   }, []); 
 
   return (
-    <div className="p-4 max-w-6xl mx-auto">
+    <div className="py-12 max-w-6xl mx-auto">
       {loading ? (
         <GlobalLoader /> 
       ) : (
         <>
-          <h2 className="text-2xl font-bold text-center mb-4">Our Best Lawyers</h2>
-          <p className="text-[#0F0F0FCC] text-center my-5 px-7 md:px-12">
+          <h2 className="text-3xl font-bold text-center mb-3">Our Best Lawyers</h2>
+          <p className="text-[#0F0F0FCC] text-center my-5 px-5 md:px-16">
             Our platform connects you with verified, experienced Lawyers across
             various specialties — all at your convenience. Whether it's a routine
             checkup or urgent consultation, book appointments in minutes and receive

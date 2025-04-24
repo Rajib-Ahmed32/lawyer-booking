@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const LawyerCard = ({ lawyer }) => {
   return (
-    <div className="border bg-white border-[#D1D5DB] py-8 rounded-lg w-full lg:w-[48%] flex flex-col items-center md:flex-row justify-center md:items-start gap-10 md:gap-12">
-      <div className="h-40 w-40 rounded overflow-hidden bg-gray-300">
+    <div className="border bg-white border-[#D1D5DB] pb-8 md:py-8 rounded-lg w-full lg:w-[48%] flex flex-col items-center md:flex-row justify-center md:items-start gap-10 md:gap-12">
+      <div className="w-[100%] md:h-40 md:w-40 rounded overflow-hidden bg-red-300">
         <img
           src={lawyer.img}
           alt={lawyer.name}

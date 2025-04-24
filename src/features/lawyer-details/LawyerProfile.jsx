@@ -13,37 +13,33 @@ const LawyerProfile = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  const [isAvailableToday, setIsAvailableToday] = useState(false);
-
-useEffect(() => {
-  const timeout = setTimeout(() => {
-    const found = lawyersData.find((l) => l.id === parseInt(id));
-    setLawyer(found);
-    setLoading(false);
-
-    if (found) {
-      const today = new Date().toLocaleString('en-US', { weekday: 'long' });
-      setIsAvailableToday(found.availability.includes(today));
-    }
-  }, 200);
-
-  return () => clearTimeout(timeout);
-}, [id]);
-
-  
   const [lawyer, setLawyer] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [isAvailableToday, setIsAvailableToday] = useState(false);
 
   useEffect(() => {
-    // Simulate async loading, like API
     const timeout = setTimeout(() => {
       const found = lawyersData.find((l) => l.id === parseInt(id));
       setLawyer(found);
       setLoading(false);
+
+      if (found) {
+        const today = new Date().toLocaleString('en-US', { weekday: 'long' });
+        setIsAvailableToday(found.availability.includes(today));
+      }
     }, 200);
 
     return () => clearTimeout(timeout);
   }, [id]);
+
+  // 🔥 Set document title dynamically based on lawyer's name
+  useEffect(() => {
+    if (lawyer?.name) {
+      document.title = lawyer.name;
+    } else {
+      document.title = 'Lawyer Profile';
+    }
+  }, [lawyer]);
 
   const handleBooking = () => {
     const existing = JSON.parse(localStorage.getItem('appointments')) || [];

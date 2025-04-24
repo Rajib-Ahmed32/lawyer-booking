@@ -34,19 +34,19 @@ const StatsSection = () => {
     triggerOnce: false,
     threshold: 0.3,
   });
-
+  
   return (
-    <section ref={ref} className="py-16 bg-white border-t border-gray-200">
+    <section ref={ref} className="py-12 bg-white border-t border-gray-200">
       <div className="text-center mb-12 px-4">
-        <h2 className="text-4xl md:text-4xl font-bold text-[#0F0F0F] mb-3">
+        <h2 className="text-3xl font-bold text-[#0F0F0F] text-center mb-4">
           We Provide Best Law Services
         </h2>
-        <p className="text-[#0F0F0F] max-w-4xl mx-auto text-base">
+        <p className="text-[#0F0F0FCC] text-center my-5 md:px-10">
           Our platform connects you with verified, experienced Lawyers across various specialities — all at your convenience.
         </p>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto px-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 md:max-w-6xl mx-auto px-4">
         {stats.map((stat, index) => (
           <div
             key={index}
