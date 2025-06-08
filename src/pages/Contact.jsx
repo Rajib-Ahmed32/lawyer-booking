@@ -1,14 +1,14 @@
-import React, { useEffect } from 'react';
-import NotFound from '../features/not-found/NotFound';
+import React, { useEffect } from "react";
+import ContactUs from "../features/contact-us/ContactUs";
 
 const Contact = () => {
   useEffect(() => {
-    document.title = 'Contact';  
-  }, []);  
+    document.title = "Contact";
+  }, []);
 
   return (
     <div>
-      <NotFound />
+      <ContactUs />
     </div>
   );
 };

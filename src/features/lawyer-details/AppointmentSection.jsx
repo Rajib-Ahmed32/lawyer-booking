@@ -1,5 +1,5 @@
 const AppointmentSection = ({ onBook, isAvailableToday }) => (
-  <div className="bg-white border-1 border-[#D1D5DB] mt-6 p-6 rounded-lg shadow text-center">
+  <div className="bg-white mb-8 border-1 border-[#D1D5DB] mt-6 p-6 rounded-lg shadow text-center">
     <h3 className="text-2xl font-bold text-[#141414] mb-4">
       Book an Appointment
     </h3>

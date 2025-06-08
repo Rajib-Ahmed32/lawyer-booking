@@ -60,7 +60,7 @@ const LawyerProfile = () => {
   if (!lawyer) return <p className="text-center text-red-500">Lawyer not found</p>;
 
   return (
-    <div className="max-w-6xl mx-auto p-4 pt-8">
+    <div className="max-w-6xl mx-auto p-4 my-7 md:my-10 ">
       <ProfileHeader />
       <LawyerInfo lawyer={lawyer} />
       <AppointmentSection onBook={handleBooking} isAvailableToday={isAvailableToday} />
