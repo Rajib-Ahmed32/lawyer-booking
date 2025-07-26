@@ -1,12 +1,48 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# ⚖️ Lawyer Booking App
 
-Currently, two official plugins are available:
+A modern web app for browsing lawyers, viewing profiles, and booking appointments — built with React, Tailwind CSS, and Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Live Site**: [classy-travesseiro-6f3f5e.netlify.app](https://classy-travesseiro-6f3f5e.netlify.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+- Lawyer profile listing and detailed views  
+- Appointment booking and canceling  
+- Interactive charts and animated stats  
+- Contact form  
+- Fully responsive layout  
+- Route error handling and loading states
+
+---
+
+## 🛠️ Tech Stack
+
+- **React 19**, **Vite**
+- **Tailwind CSS**
+- **React Router DOM**
+- **Recharts**, **CountUp**
+- **React Toastify**, **Lucide React**
+
+---
+
+## 📦 Notable Commits
+
+- `Jun 8, 2025` – Added responsive Contact Us form  
+- `May 26, 2025` – Mobile-friendly hamburger menu  
+- `Apr 24, 2025` – Final responsive improvements  
+- `Apr 23, 2025` – Blog post component, UI polish, animated stats  
+- `Apr 22, 2025` – Appointment logic, lawyer profile, routing  
+- `Apr 21, 2025` – Header, Hero section, folder structure setup
+
+---
+
+## 👤 Author
+
+**Rajib Ahmed**  
+[GitHub @Rajib-Ahmed32](https://github.com/Rajib-Ahmed32)
+
+---
+
